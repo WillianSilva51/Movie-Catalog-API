@@ -12,9 +12,14 @@ public class OpenAPIConfiguration {
 
 	@Bean
 	public OpenAPI customOpenAPI() {
-		return new OpenAPI().info(new Info().title("Movie Catalog API").version("v0.0.1").description("API for movie catalog").
-				termsOfService("""
-						https://swagger.io/terms/""").license(new License().name("MIT").url("""
-						https://springdoc.org""")).contact(new Contact().name("Willian Silva").email("williansilva@alu.ufc.br")));
+		return new OpenAPI()
+				.info(new Info().title("Movie Catalog API")
+						.version("v0.0.1")
+						.description("API for movie catalog")
+						.termsOfService("""
+								https://swagger.io/terms/""")
+						.license(new License().name("MIT").url("""
+								https://springdoc.org"""))
+						.contact(new Contact().name("Willian Silva").email("williansilva@alu.ufc.br")));
 	}
 }
