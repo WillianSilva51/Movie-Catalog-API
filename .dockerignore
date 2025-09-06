@@ -1,32 +1,21 @@
-**/.classpath
-**/.dockerignore
-**/.env
-**/.git
-**/.gitignore
-**/.gitmodules
-**/.project
-**/.settings
-**/.toolstarget
-**/.vs
-**/.vscode
-**/*.*proj.user
-**/*.dbmdl
-**/*.jfm
-**/bin
-**/charts
-**/docker-compose*
-**/compose*
-**/Dockerfile*
-**/node_modules
-**/npm-debug.log
-**/obj
-**/secrets.dev.yaml
-**/values.dev.yaml
-**/.github
-**/docs
-**/tests
-**/benchmarks.sh
-**/lib
-**/.idea
-LICENSE
-README.md
+Ignora o histórico do Git.
+.git
+.gitignore
+
+Ignora os diretórios de build do Maven e Gradle.
+A compilação será feita dentro do container (multi-stage build).
+target/
+build/
+
+Ignora arquivos de log e variáveis de ambiente locais.
+*.log
+.env
+
+Ignora pastas e arquivos de configuração de IDEs.
+.idea/
+.vscode/
+*.iml
+
+Ignora arquivos de metadados do Sistema Operacional.
+.DS_Store
+Thumbs.db
